@@ -9,7 +9,7 @@ let somma = 0;
 for (let i = 0; i < 10; i++) {
    
     // - definisco una variabile che chieda un numero all'utente e la salvo in un prompt (numberUser) 
-    let numberUser = parseInt(prompt('inserisci un numero:'));
+    let numberUser = Number(prompt('inserisci un numero:'));
      // - sommare i risultati
     somma += numberUser;
 }
