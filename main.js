@@ -27,5 +27,5 @@ console.log(lParola2);
 //    altrimenti
 //    -stampo le parole hanno la stessa lunghezza
 if (lParola1 > lParola2) {
-    console.log(`${parola1} è più lunga di ${parola2}`);
+    console.log(`${parola1}${parola2}`);
 }
