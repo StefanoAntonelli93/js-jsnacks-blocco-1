@@ -17,15 +17,23 @@ console.log('la seconda parola è:', parola2);
 // - definisco le variabili per le lunghezze delle parole e le salvo in console; (lParola1 e lParola2)
 const lParola1 = parola1.length; 
 const lParola2 = parola2.length; 
-// Andiamo poi a verificare quale delle due parole è più lunga e stampiamo in console un messaggio appropriato.
+
 console.log(lParola1);
 console.log(lParola2);
+
 //    SE lparola1 > lparola2
 //    -allora stampo prima parola 1 poi parola 2
 //    altrimenti SE lparola2 > lparola1
 //    -stampo prima parola 2 poi parola 1
 //    altrimenti
 //    -stampo le parole hanno la stessa lunghezza
+
 if (lParola1 > lParola2) {
-    console.log(`${parola1}${parola2}`);
-}
+    console.log(parola2, parola1);
+}   else if (lParola2 > lParola1) {
+        console.log(parola1, parola2);
+    }
+    else {
+        console.log('stessa lunghezza');
+    }
+
