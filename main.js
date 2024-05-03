@@ -14,7 +14,7 @@ console.log('la prima parola è:', parola1);
 const parola2 = prompt('Inserisci la seconda parola');
 console.log('la seconda parola è:', parola2);
 
-
+// - definisco le variabili per le lunghezze delle parole e le salvo in console; (lParola1 e lParola2)
 const lParola1 = parola1.length; 
 const lParola2 = parola2.length; 
 // Andiamo poi a verificare quale delle due parole è più lunga e stampiamo in console un messaggio appropriato.
