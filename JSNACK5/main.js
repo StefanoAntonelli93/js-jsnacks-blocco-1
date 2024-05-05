@@ -13,11 +13,23 @@ for (let i = 0; i < count; i++) {
     const userNumber = Number(prompt(`${i} di ${count} inserisci un numero`));
     console.log('il numero inserito è:', userNumber);
     //    SE numero utente disparo ALLORA inserisco nell'array 
-    if (userNumber % 2 !== 0) {
-        emptyArray.push(userNumber);
+    if  (!isNaN(userNumber)) {
+        if (userNumber % 2 !== 0){
+            emptyArray.push(userNumber);
+        }
+       
 
-    }  
+    } else {
+        console.log(
+          `${i} - Hai inserito un valore non numerico che è stato escluso dalla somma`
+        );
+        // i = i - 1;
+        i--;
+      }
 }
+
+
+
   //     // - stampo in console il risultato 
   console.log('i numeri dispari sono:', emptyArray);
 
