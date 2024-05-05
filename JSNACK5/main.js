@@ -21,9 +21,8 @@ for (let i = 0; i < count; i++) {
 
     } else {
         console.log(
-          `${i} - Hai inserito un valore non numerico che è stato escluso dalla somma`
+          `${i} - Hai inserito un valore non numerico`
         );
-        // i = i - 1;
         i--;
       }
 }
