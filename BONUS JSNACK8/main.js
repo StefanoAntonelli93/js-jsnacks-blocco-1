@@ -1,6 +1,9 @@
 'use strict';
 console.log('bonus');
 
+
+
+let somma = 0;
 // - definisco una variabile che chieda all'utente un numero di 4 cifre e lo salvo in un prompt (userNumber)
 const userNumber = Number(prompt('inserisci un numero di 4 cifre'));
 console.log('il numero inserito è:', userNumber);
@@ -16,11 +19,17 @@ if (userNumber >= 1000 && userNumber <= 9999)  {
 
 if (isValidNumber === true) {
     console.log('il numero è composto da 4 cifre');
+    for (let i = 0; i < userNumber.toString; i++) {
+        somma += userNumber[i];
+       
+    }
 
  } else {
      console.log('il numero non è composto da 4 cifre');
-    alert('il numero non è di 4 cifre, riprova');
+    // alert('il numero non è di 4 cifre, riprova');
  }
 
 // - calcolo la somma delle cifre che compongono il numero
 // - stampo il risultato in console
+
+console.log('la somma è:', somma);

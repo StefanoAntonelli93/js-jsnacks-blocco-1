@@ -3,7 +3,7 @@ console.log('ok');
 
 // Snack 5
 //     // - creo un array vuoto
-let emptyArray = [];
+const emptyArray = [];
 
 
 //     // - creo un ciclo for che si ripeta per sei volte
