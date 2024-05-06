@@ -8,6 +8,8 @@ let somma = 0;
 const userNumber = Number(prompt('inserisci un numero di 4 cifre'));
 console.log('il numero inserito è:', userNumber);
 
+// - converto in stringa il numero di 4 cifre per poi iterarlo in un ciclo for
+const input = userNumber.toString();
 // - definisco una variabile che indichi se il numero inserito sia valido per l'operazione (isValidNumber)
 let isValidNumber = false;
 
@@ -19,14 +21,16 @@ if (userNumber >= 1000 && userNumber <= 9999)  {
 
 if (isValidNumber === true) {
     console.log('il numero è composto da 4 cifre');
-    for (let i = 0; i < userNumber.toString; i++) {
-        somma += userNumber[i];
-       
+    for (let i = 0; i < input.length; i++) {
+        somma += parseInt(input[i]);
+
     }
 
  } else {
-     console.log('il numero non è composto da 4 cifre');
-    // alert('il numero non è di 4 cifre, riprova');
+    console.log('il numero non è composto da 4 cifre');
+  
+
+
  }
 
 // - calcolo la somma delle cifre che compongono il numero
